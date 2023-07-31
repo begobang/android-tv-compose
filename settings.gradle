@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        flatDir {
+            dirs 'data/libs'
+        }
+        maven {
+            Properties properties = new Properties()
+            properties.load(file('local.properties').newDataInputStream())
+
+            url "https://maven.pkg.github.com/Rocket-Beer/*"
+            credentials {
+                username = properties.getProperty("github.username")
+                password = properties.getProperty("github.token")
+            }
+        }
+    }
+}
+rootProject.name = "AndroidTV"
+include ':app'

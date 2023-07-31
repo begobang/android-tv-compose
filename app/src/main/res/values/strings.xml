@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroidTV</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+
+    <string name="home">Home</string>
+    <string name="similar">Similar</string>
+
+    <string name="path">https://www.themoviedb.org/t/p/w600_and_h600_bestv2%s</string>
+
+    <string name="movies">Recommended movies</string>
+    <string name="series">Recommended series</string>
+    <string name="companies">Production Companies</string>
+    <string name="similar_content">More like %s</string>
+</resources>
